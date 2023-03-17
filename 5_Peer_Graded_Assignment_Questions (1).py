@@ -164,7 +164,7 @@ def get_graph(chart, year, children1, children2, c3, c4, c5):
             
             # TASK5: Average flight time by reporting airline
             # Enter your code below. Make sure you have correct formatting.
-            line_fig = px.line(line_data, x='Month', y='Airtime', color='Reporting_Airline', title='Average monthly flight time (minutes) by airline')
+            line_fig = px.line(line_data, x='Month', y='AirTime', color='Reporting_Airline', title='Average monthly flight time (minutes) by airline')
             
             # Percentage of diverted airport landings per reporting airline
             pie_fig = px.pie(div_data, values='Flights', names='Reporting_Airline', title='% of flights by reporting airline')
